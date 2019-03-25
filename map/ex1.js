@@ -21,7 +21,8 @@ En sortie: [
 
  */
 
-function getStringsLength(strings) {
+const getStringsLength = strings => {
+
 }
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
