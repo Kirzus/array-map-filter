@@ -51,7 +51,18 @@ Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 ]
 */
 
-function getCirclesProperties(radiuses) {
+const getCirclesProperties = radiuses => {
+  result = radiuses.map(circle => {
+    circle = {
+      radius: circle,
+      circumference: (2 * Math.PI * circle).toFixed(3),
+      surface: (Math.PI * circle * circle).toFixed(3),
+    }
+
+    return circle;
+   });
+
+   return result;
 }
 
 
