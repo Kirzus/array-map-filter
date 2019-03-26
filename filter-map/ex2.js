@@ -24,7 +24,10 @@ Sortie attendue:
 
 */
 
-function getCampusesTeachingReact(campuses) {
+const getCampusesTeachingReact = campuses => {
+  return campuses
+    .filter(campus => campus.curriculums.find(techno => techno === 'JS/React'))
+    .map(campus => campus.city);
 }
 
 module.exports = getCampusesTeachingReact;
